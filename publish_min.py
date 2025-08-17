@@ -53,10 +53,7 @@ def create_post(raw_text: str, status="draft", tags=None, categories=None, slug=
 
 if __name__ == "__main__":
     # 여기에 올리고 싶은 원문 입력
-    RAW = """나이아가라 당일치기 여행 메모.
-- 가는 법/비용 정리
-- 겨울 경치 포인트
-- 브이로그 마무리 멘트 후보 등
+    RAW = """test poster
 """
     res = create_post(RAW, status="publish", tags=["vlog","toronto"], categories=["일상"])
     print("Post created:")
